@@ -1,11 +1,11 @@
 {
-    "name": "topthink/think-ide-helper",
+    "name": "edwinhuish/think-ide-helper",
     "description": "",
     "license": "Apache-2.0",
     "authors": [
         {
-            "name": "yunwuxin",
-            "email": "448901948@qq.com"
+            "name": "edwinhuish",
+            "email": "171336747@qq.com"
         }
     ],
     "require": {
