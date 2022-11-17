@@ -315,11 +315,11 @@ class ModelGenerator
                                 $this->addProperty($name, get_class($return->getModel()), true, null);
                             }
 
-                            if ($return instanceof HasMany || $return instanceof HasManyThrough || $return instanceof BelongsToMany) {
+                            if ($return instanceof HasMany || $return instanceof HasManyThrough || $return instanceof BelongsToMany || $return instanceof MorphMany) {
                                 $this->addProperty($name, 'think\Collection|\\' . get_class($return->getModel()) . '[]', true, null);
                             }
 
-                            if ($return instanceof MorphTo || $return instanceof MorphMany) {
+                            if ($return instanceof MorphTo) {
                                 $this->addProperty($name, 'mixed', true, null);
                             }
 
